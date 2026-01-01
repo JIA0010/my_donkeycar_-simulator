@@ -130,6 +130,7 @@ Opening http://localhost:8887
 # 学習を実行
 donkey train --tub ./data --model ./models/mypilot.h5
 ```
+<!-- 引数の解析: --tub（データの場所）、--model（保存する名前）、--config（設定ファイル）などのオプションを解析します。 -->
 
 学習には数分から数十分かかります（データ量とPCの性能による）。
 
@@ -172,14 +173,20 @@ pip install tensorflow
 
 ### Python 3.13で動かない場合
 
-Python 3.13はまだ対応していない場合があります。Python 3.9-3.11を推奨します。
+**重要**: Python 3.13は現在TensorFlow 2.20しかサポートしておらず、Donkeycar 5.0.0とは互換性がありません。**Python 3.9-3.11を使用してください**。
 
 ```bash
 # Python 3.11で新しい仮想環境を作成
 python3.11 -m venv env
 source env/bin/activate
-pip install donkeycar
+pip install -r requirements.txt
 ```
+
+#### エラー例
+```
+AttributeError: 'Functional' object has no attribute 'input_names'
+```
+このエラーが出た場合、Python 3.13を使用している可能性があります。上記の手順でPython 3.11の環境を作り直してください。
 
 ## 📚 参考リンク
 
