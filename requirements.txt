@@ -23,7 +23,7 @@ itsdangerous==2.2.0
 Jinja2==3.1.6
 MarkupSafe==3.0.3
 moviepy==2.2.1
-numpy==2.4.0
+numpy>=1.23.5,<2.0.0
 paho-mqtt==2.1.0
 pandas==2.3.3
 pillow==11.3.0
@@ -48,6 +48,9 @@ six==1.17.0
 tornado==6.5.4
 tqdm==4.67.1
 typing_extensions==4.15.0
+tensorflow==2.15.0
+keras==2.15.0
+albumentations<2.0
 tzdata==2025.3
 urllib3==2.6.2
 utm==0.8.1
