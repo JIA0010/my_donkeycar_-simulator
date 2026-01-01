@@ -1,0 +1,63 @@
+# 仮想環境とキャッシュファイルを無視
+env/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+*.egg-info/
+
+# データとモデルファイル（サイズが大きいため）
+mycar/data/
+mycar/models/
+mycar/logs/
+*.h5
+*.tflite
+*.onnx
+*.pkl
+
+# トレーニングデータ（大容量）
+data/
+tub*/
+*.tar.gz
+*.zip
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# バックアップファイル
+*.backup
+*.bak
+*.orig
+
+# ログファイル
+*.log
+
+# 環境設定（個人情報を含む可能性）
+.env
+.env.local
+
+# テンポラリファイル
+*.tmp
+.cache/
+
+# Git関連
+*.patch
+*.diff
