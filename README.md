@@ -3,13 +3,15 @@
 PC上でDonkey Carのシミュレーターを使用して自動運転を体験できる環境です。実機（Raspberry Pi）がなくても、**手動走行でデータ収集** → **学習（AIモデル作成）** → **自動運転** の一連の流れを体験できます。
 
 > 📚 **すべてのドキュメント一覧は [INDEX.md](INDEX.md) を参照してください**  
-> 🚨 **エラーが出た場合は [QUICK_REFERENCE.md](QUICK_REFERENCE.md) を参照してください**
+> 🚨 **エラーが出た場合は [QUICK_REFERENCE.md](QUICK_REFERENCE.md) を参照してください**  
+> 🎯 **カスタムコース作成・性能向上は [QUICK_START_CUSTOM.md](QUICK_START_CUSTOM.md) を参照してください** ⭐ NEW!
 
 ## 📋 目次
 
 - [環境構築済み](#環境構築済み)
 - [シミュレーターのダウンロード](#シミュレーターのダウンロード)
 - [使い方](#使い方)
+- [カスタムコース・性能向上](#カスタムコース性能向上) ⭐ NEW!
 - [トラブルシューティング](#トラブルシューティング)
 
 ## ✅ 環境構築済み
@@ -150,6 +152,60 @@ python manage.py drive --model ./models/mypilot.h5
 2. 車が自動で走り出します！
 
 うまく走らない場合は、より多くのデータを収集して再学習してください。
+
+## 🎯 カスタムコース・性能向上
+
+### 方法1: 既存環境を使用（推奨）
+
+赤い壁と黒い道のシンプルな環境を今すぐ使いたい場合:
+
+**クイックガイド:**
+```bash
+# 環境を簡単に切り替え
+./switch_environment.sh
+
+# 利用可能な環境:
+# 1. 倉庫環境（シンプル） ← 推奨・設定済み
+# 2. 道路環境
+# 3. 自動生成トラック
+# 4. SparkFun AVCコース
+```
+
+**👉 詳細は [QUICK_START_CUSTOM.md](QUICK_START_CUSTOM.md) を参照**
+
+### 方法2: Unityで完全カスタムコース作成 🆕
+
+実際の赤い壁と黒い道のコースを**Unityで完全に作成**できます！
+
+**🚀 30分で完成！**
+```bash
+# クイックスタートガイドに従う
+open unity_custom_course/QUICKSTART.md
+```
+
+**完全パッケージ:**
+- ✅ Unity C#スクリプト（トラック自動生成）
+- ✅ マテリアル設定（黒い道、赤い壁）
+- ✅ ビルドとテスト手順
+- ✅ 詳細なセットアップガイド
+
+**👉 詳細は [unity_custom_course/README.md](unity_custom_course/README.md) または [CUSTOM_COURSE_COMPLETE.md](CUSTOM_COURSE_COMPLETE.md) を参照**
+
+### 性能を上げる方法
+
+1. **高品質なデータ収集**（最重要）
+   - トラックの中央を維持
+   - 滑らかな運転（急ハンドル禁止）
+   - 2000-3000フレーム以上収集
+
+2. **トレーニング設定の最適化**
+   - 既に最適化済み（`mycar/myconfig.py`）
+   - `MAX_EPOCHS = 150`
+   - `EARLY_STOP_PATIENCE = 10`
+
+3. **詳細ガイド**
+   - 📖 [PERFORMANCE_GUIDE.md](PERFORMANCE_GUIDE.md) - 性能向上テクニック
+   - 📖 [CUSTOM_COURSE_GUIDE.md](CUSTOM_COURSE_GUIDE.md) - カスタムコース作成
 
 ## 🛠️ トラブルシューティング
 

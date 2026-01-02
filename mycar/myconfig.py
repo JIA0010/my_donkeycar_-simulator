@@ -23,8 +23,15 @@ IMAGE_DEPTH = 3
 
 # SIMULATOR SETTINGS
 DONKEY_GYM = True
-DONKEY_SIM_PATH = "remote"
-DONKEY_GYM_ENV_NAME = "donkey-generated-track-v0"
+# カスタムビルド（CustomRedWallTrack）を使う場合はパスを指定
+DONKEY_SIM_PATH = "/Users/yoshimurahiro/Desktop/DonkeySimCustom/DonkeySimCustom.app"
+# DONKEY_SIM_PATH = "remote"  # リモートシミュレーターの場合
+# シンプルな環境を試す: warehouse, generated-roads, generated-track, avc-sparkfun
+# - donkey-warehouse-v0: 倉庫環境（シンプル、制御しやすい）
+# - donkey-generated-roads-v0: 道路環境
+# - donkey-generated-track-v0: 自動生成トラック（デフォルト）
+# - donkey-avc-sparkfun-v0: SparkFun AVCコース
+DONKEY_GYM_ENV_NAME = "donkey-generated-track-v0"  # 組み込み環境名（カスタムビルドでは無視される）
 
 GYM_CONF = {
     "body_style": "donkey",
@@ -51,14 +58,14 @@ JOYSTICK_MAX_THROTTLE = 1.0
 JOYSTICK_STEERING_SCALE = 1.0
 JOYSTICK_DEADZONE = 0.01
 
-# TRAINING
+# TRAINING - 性能向上のための最適化
 BATCH_SIZE = 128
 TRAIN_TEST_SPLIT = 0.8
-MAX_EPOCHS = 100
+MAX_EPOCHS = 150  # エポック数を増やして学習を深める
 SHOW_PLOT = True
 VERBOSE_TRAIN = True
 USE_EARLY_STOP = True
-EARLY_STOP_PATIENCE = 5
+EARLY_STOP_PATIENCE = 10  # より多くのエポックを待つ
 MIN_DELTA = 0.0005
 PRINT_MODEL_SUMMARY = True
 
