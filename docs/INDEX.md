@@ -1,61 +1,169 @@
-# 📚 ドキュメント（ミニマル版）
+# 📚 ドキュメント一覧# 📚 ドキュメント一覧
 
-## 🎯 3つのドキュメントだけ
 
-| 何したい？ | ドキュメント |
-|-----------|------------|
-| **セットアップ確認** | [SETUP_DETAILS.md](SETUP_DETAILS.md) |
-| **実際に走らせる** | [QUICKSTART.md](QUICKSTART.md) |
-| **エラーを解決** | [QUICK_REFERENCE.md](QUICK_REFERENCE.md) |
+
+## 🎯 最初に読むもの## 🎯 最初に読むもの
+
+
+
+| 何をしたい？ | ドキュメント | 時間 || 何をしたい？ | ドキュメント | 時間 |
+
+|-----------|------------|------||-----------|------------|------|
+
+| **このプロジェクトについて知る** | [ABOUT_PROJECT.md](ABOUT_PROJECT.md) | 10分 || **このプロジェクトについて知る** | [ABOUT_PROJECT.md](ABOUT_PROJECT.md) | 10分 |
+
+| **セットアップを確認** | [SETUP_DETAILS.md](SETUP_DETAILS.md) | 5分 || **セットアップを確認** | [SETUP_DETAILS.md](SETUP_DETAILS.md) | 5分 |
+
+| **すぐに走らせる** | [QUICKSTART.md](QUICKSTART.md) | 10分 || **すぐに走らせる** | [QUICKSTART.md](QUICKSTART.md) | 10分 |
+
+
+
+## 🔍 さらに詳しく知りたい場合## � さらに詳しく知りたい場合
+
+
+
+| 内容 | ドキュメント | 対象 || 内容 | ドキュメント | 対象 |
+
+|------|------------|------||------|------------|------|
+
+| **エラーを即座に解決** | [QUICK_REFERENCE.md](QUICK_REFERENCE.md) | 全員 || **エラーを即座に解決** | [QUICK_REFERENCE.md](QUICK_REFERENCE.md) | 全員 |
+
+| **カスタムコース・性能向上** | [CUSTOM_COURSE.md](CUSTOM_COURSE.md) | 中級者向け || **カスタムコース・性能向上** | [CUSTOM_COURSE.md](CUSTOM_COURSE.md) | 中級者向け |
+
+| **技術的な詳細説明** | [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md) | 上級者向け || **技術的な詳細説明** | [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md) | 上級者向け |
+
+
+
+------
+
+
+
+## 📖 各ドキュメントの役割## 📖 各ドキュメントの役割
+
+新しく追加した機能:
+
+### 1️⃣ [ABOUT_PROJECT.md](ABOUT_PROJECT.md) ⭐ **最初に読んで**✅ カスタムコース作成（Unityで赤い壁と黒い道）
+
+このプロジェクト全体の説明✅ 環境切り替え機能（4つの異なる環境を選択可能）
+
+- 何をするプロジェクト？✅ 性能最適化ガイド（AIの精度向上の具体的手法）
+
+- Donkey Car v5.0.0が必須な理由✅ 完全な実装ドキュメント
+
+- 学習の仕組み
+
+- ディレクトリ構造## 🎯 3つのドキュメントだけ
+
+
+
+### 2️⃣ [SETUP_DETAILS.md](SETUP_DETAILS.md)| 何したい？ | ドキュメント |
+
+セットアップの確認（5分で完了）|-----------|------------|
+
+- 仮想環境の有効化| **セットアップ確認** | [SETUP_DETAILS.md](SETUP_DETAILS.md) |
+
+- Donkey Car v5.0.0の確認| **実際に走らせる** | [QUICKSTART.md](QUICKSTART.md) |
+
+- 設定ファイル確認| **エラーを解決** | [QUICK_REFERENCE.md](QUICK_REFERENCE.md) |
+
+- ディレクトリ確認
 
 ---
 
-## 詳しく知りたい場合
+### 3️⃣ [QUICKSTART.md](QUICKSTART.md)
 
-| タイプ | ドキュメント |
-|--------|------------|
-| カスタムコース・性能向上 | [CUSTOM_COURSE.md](CUSTOM_COURSE.md) |
-| 技術的な詳細 | [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md) |
+5ステップで走らせる（10分）## 詳しく知りたい場合
 
----
+- シミュレーター起動
 
-� まずは [QUICKSTART.md](QUICKSTART.md) から始めよう！
-- Donkey Car v5.0.0 インストール確認
-- myconfig.py の設定
+- 手動運転開始| タイプ | ドキュメント |
+
+- データ収集|--------|------------|
+
+- 学習| カスタムコース・性能向上 | [CUSTOM_COURSE.md](CUSTOM_COURSE.md) |
+
+- 自動運転テスト| 技術的な詳細 | [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md) |
+
+
+
+### 4️⃣ [QUICK_REFERENCE.md](QUICK_REFERENCE.md)---
+
+エラーが出た時の即座解決
+
+- よくあるエラー� まずは [QUICKSTART.md](QUICKSTART.md) から始めよう！
+
+- 1行の解決方法- Donkey Car v5.0.0 インストール確認
+
+- 緊急度別に整理- myconfig.py の設定
+
 - mycar/data/ と mycar/models/ ディレクトリ管理
 
-### 2️⃣ [GETTING_STARTED.md](GETTING_STARTED.md) - クイックスタート
-- セットアップ後の最初のステップ
-- 手動運転 → データ収集 → 学習 → 自動運転の流れ
-- 基本的なトラブルシューティング
+### 5️⃣ [CUSTOM_COURSE.md](CUSTOM_COURSE.md)
 
-### 3️⃣ [SIMULATOR_GUIDE.md](SIMULATOR_GUIDE.md) - シミュレーター操作マニュアル
-- ブラウザUIの使い方
-- 各操作モード（User / Local Angle / Local）
-- キーボード操作
-- データ記録の方法
+カスタムコース・性能向上### 2️⃣ [GETTING_STARTED.md](GETTING_STARTED.md) - クイックスタート
 
-### 4️⃣ [CUSTOM_COURSE.md](CUSTOM_COURSE.md) - カスタムコース作成
+- 既存環境の使い方- セットアップ後の最初のステップ
+
+- Unityでのコース作成- 手動運転 → データ収集 → 学習 → 自動運転の流れ
+
+- 性能向上テクニック- 基本的なトラブルシューティング
+
+
+
+### 6️⃣ [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md)### 3️⃣ [SIMULATOR_GUIDE.md](SIMULATOR_GUIDE.md) - シミュレーター操作マニュアル
+
+技術的な詳細説明- ブラウザUIの使い方
+
+- エラーの根本原因- 各操作モード（User / Local Angle / Local）
+
+- バージョン互換性- キーボード操作
+
+- デバッグ方法- データ記録の方法
+
+
+
+---### 4️⃣ [CUSTOM_COURSE.md](CUSTOM_COURSE.md) - カスタムコース作成
+
 - 方法1: 既存環境を使用（推奨）
-- 方法2: Unityでカスタムコース作成
+
+## 🚀 推奨される読む順序- 方法2: Unityでカスタムコース作成
+
 - 利用可能な環境一覧
-- パフォーマンス向上策
 
-### 5️⃣ [PERFORMANCE_GUIDE.md](PERFORMANCE_GUIDE.md) - 性能向上ガイド
-- データ品質の向上
-- モデル学習の最適化
+**初心者向け** →- パフォーマンス向上策
+
+1. [ABOUT_PROJECT.md](ABOUT_PROJECT.md) (このプロジェクトを理解)
+
+2. [SETUP_DETAILS.md](SETUP_DETAILS.md) (準備状況を確認)### 5️⃣ [PERFORMANCE_GUIDE.md](PERFORMANCE_GUIDE.md) - 性能向上ガイド
+
+3. [QUICKSTART.md](QUICKSTART.md) (実際に動かす)- データ品質の向上
+
+4. [QUICK_REFERENCE.md](QUICK_REFERENCE.md) (エラー時に参照)- モデル学習の最適化
+
 - トレーニングパラメータの調整
-- デバッグとモニタリング
 
-### 6️⃣ [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - エラーの即座の解決
+**すぐに走らせたい人** →- デバッグとモニタリング
+
+1. [QUICKSTART.md](QUICKSTART.md)
+
+2. [QUICK_REFERENCE.md](QUICK_REFERENCE.md) (エラー時のみ)### 6️⃣ [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - エラーの即座の解決
+
 - よくあるエラーと1行の解決方法
-- 緊急度別に整理
-- コマンドをコピペするだけで解決
+
+**性能を上げたい人** →- 緊急度別に整理
+
+1. [CUSTOM_COURSE.md](CUSTOM_COURSE.md)- コマンドをコピペするだけで解決
+
+2. [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md) (詳細理解時)
 
 ### 7️⃣ [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md) - 技術的な詳細解説
-- エラーの深い原因分析
+
+---- エラーの深い原因分析
+
 - バージョン互換性の詳細
-- デバッグ方法
+
+👉 **まずは [ABOUT_PROJECT.md](ABOUT_PROJECT.md) を読んでください！**- デバッグ方法
+
 - 環境のリセット方法
 
 ---
