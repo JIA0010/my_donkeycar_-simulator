@@ -6,6 +6,7 @@
 
 ```
 env/lib/python3.11/site-packages/donkeycar/
+ここからcode .にアクセスして解析を始める
 ```
 
 **確認コマンド**:
