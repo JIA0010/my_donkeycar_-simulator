@@ -1,14 +1,35 @@
 #!/usr/bin/env python3
 """
-Scripts to drive a donkey 2 car
+```
+実機ロボット用のキャリブレーション（調整）ツール
 
+目的:
+- サーボモータの左右の最大角度を測定
+- ESC（電子スピードコントローラー）の最大スロットル値を測定
+- 実際のハードウェアに合わせた値を config.py に記録
+
+使用場面:
+例) Raspberry Pi + サーボ + モータの組み合わせ時に、
+   その組み合わせに最適なPWM値を測定する
+```
+
+
+もし将来 Raspberry Pi + 物理ロボットを使う場合:
+
+```bash
+# calibrate.py を実行
+cd mycar
+python calibrate.py
+
+# ブラウザで http://localhost:8887/calibrate にアクセス
+# サーボを左右に動かす
+# 最大値を測定
+# config.py に記録
+```
 Usage:
-    manage.py (drive)
-
-
-Options:
-    -h --help          Show this screen.
+    calibrate.py drive
 """
+
 import os
 import time
 
