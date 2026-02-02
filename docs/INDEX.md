@@ -1,244 +1,91 @@
-# 📚 ドキュメント索引
+# 📚 ドキュメント（ミニマル版）
 
-Donkey Carシミュレーター環境の全ドキュメント一覧です。目的に応じて適切なドキュメントを参照してください。
+## 🎯 3つのドキュメントだけ
 
----
-
-## 🚀 初めての方向け
-
-### 1. [README.md](../README.md)
-**目的**: プロジェクト全体の概要とセットアップ手順
-
-**こんな時に読む**:
-- 最初に何をすべきか知りたい
-- プロジェクトの全体像を把握したい
-
-**所要時間**: 10分
+| 何したい？ | ドキュメント |
+|-----------|------------|
+| **セットアップ確認** | [SETUP_DETAILS.md](SETUP_DETAILS.md) |
+| **実際に走らせる** | [QUICKSTART.md](QUICKSTART.md) |
+| **エラーを解決** | [QUICK_REFERENCE.md](QUICK_REFERENCE.md) |
 
 ---
 
-### 2. [GETTING_STARTED.md](GETTING_STARTED.md)
-**目的**: クイックスタートガイド
+## 詳しく知りたい場合
 
-**こんな時に読む**:
-- セットアップが完了してすぐに使い始めたい
-- データ収集から自動運転までの流れを知りたい
-
-**所要時間**: 5分
+| タイプ | ドキュメント |
+|--------|------------|
+| カスタムコース・性能向上 | [CUSTOM_COURSE.md](CUSTOM_COURSE.md) |
+| 技術的な詳細 | [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md) |
 
 ---
 
-### 3. [SIMULATOR_GUIDE.md](SIMULATOR_GUIDE.md)
-**目的**: シミュレーターアプリの起動方法
+� まずは [QUICKSTART.md](QUICKSTART.md) から始めよう！
+- Donkey Car v5.0.0 インストール確認
+- myconfig.py の設定
+- mycar/data/ と mycar/models/ ディレクトリ管理
 
-**こんな時に読む**:
-- シミュレーターのダウンロード先を知りたい
-- 起動時の設定方法を知りたい
+### 2️⃣ [GETTING_STARTED.md](GETTING_STARTED.md) - クイックスタート
+- セットアップ後の最初のステップ
+- 手動運転 → データ収集 → 学習 → 自動運転の流れ
+- 基本的なトラブルシューティング
 
-**所要時間**: 7分
+### 3️⃣ [SIMULATOR_GUIDE.md](SIMULATOR_GUIDE.md) - シミュレーター操作マニュアル
+- ブラウザUIの使い方
+- 各操作モード（User / Local Angle / Local）
+- キーボード操作
+- データ記録の方法
 
----
+### 4️⃣ [CUSTOM_COURSE.md](CUSTOM_COURSE.md) - カスタムコース作成
+- 方法1: 既存環境を使用（推奨）
+- 方法2: Unityでカスタムコース作成
+- 利用可能な環境一覧
+- パフォーマンス向上策
 
-## 🎯 カスタムコース・性能向上 ⭐ NEW!
+### 5️⃣ [PERFORMANCE_GUIDE.md](PERFORMANCE_GUIDE.md) - 性能向上ガイド
+- データ品質の向上
+- モデル学習の最適化
+- トレーニングパラメータの調整
+- デバッグとモニタリング
 
-### 4. [CUSTOM_COURSE.md](CUSTOM_COURSE.md) ⭐ **推奨**
-**目的**: カスタムコース作成と性能向上の完全ガイド
+### 6️⃣ [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - エラーの即座の解決
+- よくあるエラーと1行の解決方法
+- 緊急度別に整理
+- コマンドをコピペするだけで解決
 
-**こんな時に読む**:
-- 赤い壁と黒い道のコースを作りたい
-- 環境を切り替えたい
-- AIの性能を上げたい
-- 3つの方法を比較したい
-
-**所要時間**: 10分
-
-**内容**:
-- ✅ 方法1: 既存環境を使用（最速・推奨）
-- ✅ 方法2: Unityでカスタムコース作成（30分）
-- ✅ 方法3: 性能向上に集中（最も効果的）
-
----
-
-### 5. [PERFORMANCE_GUIDE.md](PERFORMANCE_GUIDE.md)
-**目的**: AIモデルの性能を最大化
-
-**こんな時に読む**:
-- モデルの精度を上げたい
-- データ収集のテクニックを学びたい
-- トレーニング設定を最適化したい
-
-**所要時間**: 20分
-
-**内容**:
-- 高品質データ収集のコツ
-- トレーニング設定の最適化
-- 性能向上チェックリスト
+### 7️⃣ [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md) - 技術的な詳細解説
+- エラーの深い原因分析
+- バージョン互換性の詳細
+- デバッグ方法
+- 環境のリセット方法
 
 ---
 
-## 🔧 トラブルシューティング
+## 🎯 あなたの状況に応じた読む順序
 
-### 6. [QUICK_REFERENCE.md](QUICK_REFERENCE.md) ⭐ **最優先**
-**目的**: よくあるエラーと即座の解決方法
+### ✅ セットアップを今からする
+1. [README.md](../README.md)
+2. [SETUP_DETAILS.md](SETUP_DETAILS.md)
+3. [QUICK_REFERENCE.md](QUICK_REFERENCE.md) (エラーが出たら)
 
-**こんな時に読む**:
-- エラーが出てすぐに解決したい
-- よくある問題の解決策を知りたい
+### ✅ セットアップは完了、さあ走らせる
+1. [GETTING_STARTED.md](GETTING_STARTED.md)
+2. [SIMULATOR_GUIDE.md](SIMULATOR_GUIDE.md)
 
-**所要時間**: 1-5分
+### ✅ パフォーマンスをもっと良くしたい
+1. [PERFORMANCE_GUIDE.md](PERFORMANCE_GUIDE.md)
+2. [CUSTOM_COURSE.md](CUSTOM_COURSE.md)
 
----
-
-### 7. [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md)
-**目的**: 技術的問題の詳細な解説と根本原因
-
-**こんな時に読む**:
-- エラーの根本原因を理解したい
-- 同じ問題を再発させたくない
-- 技術的に深く理解したい
-
-**所要時間**: 30-45分
+### ✅ エラーが出た
+1. [QUICK_REFERENCE.md](QUICK_REFERENCE.md) で即答を探す
+2. 解決しなければ [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md) で詳細を読む
 
 ---
 
-## 🧹 環境管理
+## 📊 ドキュメント統計
 
-### 8. [CLEANUP_GUIDE.md](CLEANUP_GUIDE.md)
-**目的**: システムを綺麗に保つためのガイド
-
-**こんな時に読む**:
-- 仮想環境の使い方を学びたい
-- ベストプラクティスを知りたい
-- システムをリセットしたい
-
-**所要時間**: 15分
-
----
-
-## 📖 参考資料
-
-### 9. [REFERENCES.md](REFERENCES.md)
-**目的**: 実装レポートと参考資料
-
-**こんな時に読む**:
-- 実装内容を確認したい
-- 技術的背景を知りたい
-- クリーンアップの詳細を確認したい
-
-**所要時間**: 10-20分
-
----
-
-## 🎓 学習・改善
-
-### 10. [LESSONS_LEARNED.md](LESSONS_LEARNED.md)
-**目的**: プロジェクトから得られた教訓
-
-**こんな時に読む**:
-- 同じミスを避けたい
-- プロジェクトを改善したい
-- ベストプラクティスを学びたい
-
-**所要時間**: 20-30分
-
----
-
-## 🔗 実行スクリプト
-
-実行スクリプトは `scripts/` ディレクトリにあります：
-
-- **`scripts/start_drive.sh`** - 手動運転モード起動
-- **`scripts/train_model.sh`** - AIモデル学習
-- **`scripts/start_autopilot.sh`** - 自動運転モード起動
-- **`scripts/switch_environment.sh`** - 環境切り替え
-- **`scripts/check_system.sh`** - システム状態確認
-
----
-
-## 🗺️ シチュエーション別ガイド
-
-### シナリオ1: 完全に初めての人
-1. [README.md](../README.md) - 全体像を把握
-2. [SIMULATOR_GUIDE.md](SIMULATOR_GUIDE.md) - シミュレーターダウンロード
-3. [GETTING_STARTED.md](GETTING_STARTED.md) - 実際に使う
-
-**所要時間**: 25分
-
-### シナリオ2: エラーが出た
-1. [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - 即座の解決
-2. `./scripts/check_system.sh` - 自動診断
-3. [TECHNICAL_ISSUES.md](TECHNICAL_ISSUES.md) - 詳細確認
-
-**所要時間**: 5-15分
-
-### シナリオ3: 性能を上げたい
-1. [CUSTOM_COURSE.md](CUSTOM_COURSE.md) - 3つの方法を確認
-2. [PERFORMANCE_GUIDE.md](PERFORMANCE_GUIDE.md) - テクニックを学ぶ
-3. 実装・反復
-
-**所要時間**: 30分+実装
-
-### シナリオ4: Unityでカスタムコース作成
-1. [CUSTOM_COURSE.md](CUSTOM_COURSE.md) - 方法2を確認
-2. [unity_custom_course/QUICKSTART.md](../unity_custom_course/QUICKSTART.md) - 30分で完成
-
-**所要時間**: 30-60分
-
----
-
-## 📊 ドキュメント比較表
-
-| ドキュメント | 難易度 | 所要時間 | 優先度 | タイプ |
-|------------|--------|---------|--------|--------|
-| README.md | ★☆☆ | 10分 | 高 | 入門 |
-| GETTING_STARTED.md | ★☆☆ | 5分 | 高 | 入門 |
-| SIMULATOR_GUIDE.md | ★☆☆ | 7分 | 中 | 入門 |
-| QUICK_REFERENCE.md | ★★☆ | 5分 | 最高 | 参考 |
-| TECHNICAL_ISSUES.md | ★★★ | 45分 | 高 | 詳細 |
-| CLEANUP_GUIDE.md | ★★☆ | 15分 | 中 | 管理 |
-| CUSTOM_COURSE.md | ★★☆ | 10分 | 高 | 拡張 |
-| PERFORMANCE_GUIDE.md | ★★☆ | 20分 | 中 | 拡張 |
-| LESSONS_LEARNED.md | ★★★ | 30分 | 中 | 学習 |
-| REFERENCES.md | ★★☆ | 20分 | 低 | 参考 |
-
-**難易度**: ★☆☆（簡単） ～ ★★★（難しい）
-
----
-
-## 🎯 クイックアクセス
-
-### よくやることベスト5
-
-1. **すぐにやってみたい**
-   ```bash
-   ./scripts/start_drive.sh
-   ```
-   参照: [GETTING_STARTED.md](GETTING_STARTED.md)
-
-2. **モデルを訓練したい**
-   ```bash
-   ./scripts/train_model.sh
-   ```
-   参照: [CUSTOM_COURSE.md](CUSTOM_COURSE.md)
-
-3. **自動走行をテストしたい**
-   ```bash
-   ./scripts/start_autopilot.sh
-   ```
-   参照: [CUSTOM_COURSE.md](CUSTOM_COURSE.md) - 方法3
-
-4. **環境を変更したい**
-   ```bash
-   ./scripts/switch_environment.sh
-   ```
-   参照: [CUSTOM_COURSE.md](CUSTOM_COURSE.md) - 方法1
-
-5. **Unityでコース作成したい**
-   参照: [CUSTOM_COURSE.md](CUSTOM_COURSE.md) - 方法2 → [unity_custom_course/QUICKSTART.md](../unity_custom_course/QUICKSTART.md)
-
----
-
-## 🔍 キーワード検索
+- **総ファイル数**: 7個 (最小限)
+- **総行数**: 約2,500行
+- **総容量**: 約67KB (軽量)
 
 ### 実行方法
 - **データ収集** → GETTING_STARTED.md, CUSTOM_COURSE.md

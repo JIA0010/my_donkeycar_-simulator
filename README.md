@@ -24,6 +24,8 @@ PC上でDonkey Carのシミュレーターを使用して自動運転を体験�
 - ✅ データ保存ディレクトリ (`mycar/data/`)
 - ✅ モデル保存ディレクトリ (`mycar/models/`)
 
+**👉 各要素の詳細: [docs/SETUP_DETAILS.md](docs/SETUP_DETAILS.md)** ← セットアップの仕組みを理解したい方向け
+
 ## 🎮 シミュレーターのダウンロード
 
 Unityベースのシミュレーターをダウンロードします。
