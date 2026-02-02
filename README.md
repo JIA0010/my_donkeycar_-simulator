@@ -2,9 +2,10 @@
 
 PC上でDonkey Carのシミュレーターを使用して自動運転を体験できる環境です。実機（Raspberry Pi）がなくても、**手動走行でデータ収集** → **学習（AIモデル作成）** → **自動運転** の一連の流れを体験できます。
 
-> 📚 **すべてのドキュメント一覧は [INDEX.md](INDEX.md) を参照してください**  
-> 🚨 **エラーが出た場合は [QUICK_REFERENCE.md](QUICK_REFERENCE.md) を参照してください**  
-> 🎯 **カスタムコース作成・性能向上は [QUICK_START_CUSTOM.md](QUICK_START_CUSTOM.md) を参照してください** ⭐ NEW!
+> 📚 **すべてのドキュメント一覧は [docs/INDEX.md](docs/INDEX.md) を参照してください**  
+> 🎯 **プロジェクト概要は [docs/ABOUT_PROJECT.md](docs/ABOUT_PROJECT.md) を参照してください**  
+> 🚨 **エラーが出た場合は [docs/QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md) を参照してください**  
+> 🎯 **カスタムコース作成・性能向上は [docs/QUICK_START_CUSTOM.md](docs/QUICK_START_CUSTOM.md) を参照してください** ⭐ NEW!
 
 ## 📋 目次
 
