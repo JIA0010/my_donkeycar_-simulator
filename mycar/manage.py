@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 """
+Donkey Carをインストールした後、
+donkey createcar --path ~/mycar  を打つと
+このコマンドを実行すると、指定したフォルダに manage.py が生成されます。
+その中身が、まさに提示されたコードです。
+つまり、「世界中のDonkey Carユーザーがベースとして使っている共通の土台」 です。
+
 Scripts to drive a donkey 2 car
 
 Usage:
